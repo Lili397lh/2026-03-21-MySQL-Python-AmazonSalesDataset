@@ -2,6 +2,12 @@
 
 Loads and analyzes "Amazon sales dataset" from Kaggle using MySQL and Python. It is created MySQL database, with Python is extracted the CSV data, cleaned and nomralized and runs 6 analytical SQL queries.
 
+## Relations Diagram
+
+-	‘categories’ -> ‘products’ (1:N): ‘categoryid’
+-	‘products’ -> ‘reviews’ (1:N): ‘id’
+-	‘users’ -> ‘reviews’ (1:N): ‘userid’
+
 ## Files
 
 - 'Tables.sql': Creates DB/tables with relationships
